@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+{% if page.name %}
+<h2>
+  {{page.name}}
+  {% if page.external_url %}
+  <span class="sub">(external link <a href="{{page.external_url}}">🔗</a>)</span>
+  {% endif %}
+</h2>
+{% endif %}
+{% if page.description %}
+<p>{{page.description}}</p>
+{% endif %}
