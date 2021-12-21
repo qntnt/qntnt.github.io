@@ -9,15 +9,7 @@ layout: default
 
   {{ content }}
 
-  {%- if site.projects.size > 0 -%}
-  <h2>Projects</h2>
-  <ul>
-    {%- for project in site.projects -%}
-    <li><a href="{{project.url}}">{{project.name}}</a></li>
-    {%- endfor -%}
-  </ul>
-  {%- endif -%}
-
+  {% include project_list.html %}
   {% include post_list.html %}
 
 </div>

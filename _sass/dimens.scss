@@ -1,0 +1,16 @@
+$base-spacing: 8px;
+
+$spacing-0: 0px;
+$spacing-half: $base-spacing / 2;
+$spacing: $base-spacing;
+$spacing-double: $base-spacing * 2;
+$spacing-triple: $base-spacing * 3;
+
+.spaced {
+  & > * {
+    margin: $spacing;
+  }
+  &-half > * {
+    margin: $spacing-half;
+  }
+}

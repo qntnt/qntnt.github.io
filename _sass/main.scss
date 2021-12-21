@@ -1,8 +1,34 @@
+@import 'prelude';
+@import 'card';
+@import 'chip';
+
 .current {
   color: green;
 }
 
-.sub {
-  font-size: 75%;
-  text-justify: center;
+body {
+  color: $color-text;
+  background-color: $color-surface;
+  font-family: BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
+}
+
+.wrap-content-width {
+  width: fit-content;
+}
+
+.wrap-content-height {
+  height: fit-content;
+}
+
+.wrap-content {
+  @extend .wrap-content-width;
+  @extend .wrap-content-height;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul, ol {
+  margin: 0;
 }

@@ -3,13 +3,29 @@ layout: default
 ---
 
 {% if page.name %}
-<h2>
-  {{page.name}}
+<div class='row spaced'>
+  <h2 class='wrap-content'>
+    {{page.name}}
+  </h2>
   {% if page.external_url %}
-  <span class="sub">(external link <a href="{{page.external_url}}">🔗</a>)</span>
+  <span class="sub-text"><a href="{{page.external_url}}">{% if
+      page.external_url_text
+      %}{{page.external_url_text}}{%
+      else
+      %}external link{% endif %} 🔗</a></span>
   {% endif %}
-</h2>
+</div>
+<div class='row'>
+  {% if page.categories.size > 0 %}
+  <div class='row justify-content-end sub-text spaced-half'>
+    {% for category in page.categories %}
+    <div class='chip'>{{category}}</div>
+    {% endfor %}
+  </div>
+  {%- endif -%}
+</div>
 {% endif %}
 {% if page.description %}
 <p>{{page.description}}</p>
+{{page.content}}
 {% endif %}

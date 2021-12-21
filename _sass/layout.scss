@@ -1,0 +1,40 @@
+.flex {
+  display: flex;
+
+  &-match-parent {
+    @extend .flex;
+  }
+
+  &-wrap-content {
+    @extend .flex;
+    display: inline-flex;
+  }
+
+  &.justify-content-end {
+    justify-content: end;
+  }
+
+  &.wrap {
+    flex-wrap: wrap;
+  }
+}
+
+.row {
+  @extend .flex;
+  flex-direction: row;
+
+  &-reverse {
+    @extend .row;
+    flex-direction: row-reverse;
+  }
+}
+
+.col {
+  @extend .flex;
+  flex-direction: column;
+
+  &-reverse {
+    @extend .col;
+    flex-direction: column-reverse;
+  }
+}

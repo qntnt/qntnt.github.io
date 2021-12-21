@@ -1,0 +1,11 @@
+@import 'prelude';
+
+.chip {
+  text-align: center;
+  font-size: smaller;
+  border: 1px solid $color-primary-dark;
+  border-radius: $spacing-double;
+  padding: $spacing-half;
+  background-color: $color-primary;
+  color: $color-text-dark;
+}
