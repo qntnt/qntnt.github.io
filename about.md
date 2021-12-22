@@ -1,7 +1,6 @@
 ---
 layout: page
 title: About & Contact
-permalink: /about/
 ---
 
 Quentin Topper is a programmer, musician, and general hobby technologist.

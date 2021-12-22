@@ -20,10 +20,11 @@
   mask-image: linear-gradient(to bottom, black, transparent 100%);
 }
 
-a.simple-card {
+.simple-card a:any-link, a.simple-card:any-link {
   color: $color-text;
   text-decoration: none;
 }
+
 // a.simple-card :link {
 //   text-decoration: none !important;
 // }

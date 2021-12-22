@@ -1,5 +1,6 @@
 $color-gray: #BFBFBF;
 $color-fern: #285954;
+$color-vibrant-fern: #108a7d;
 $color-royal-dark: #020659;
 $color-royal: #2F3273;
 $color-royal-light: #5D5F8C;
@@ -10,12 +11,16 @@ $color-primary-light: $color-royal-light;
 
 $color-secondary: $color-fern;
 
+$color-interactive: $color-vibrant-fern;
+$color-interactive-active: darken($color-vibrant-fern, 10%);
+$color-interactive-inactive: $color-fern;
+
 $color-surface: lighten($color-gray, 20%);
 $color-surface-2: lighten($color-gray, 15%);
 $color-surface-3: lighten($color-gray, 10%);
-$color-surface-dark: darken($color-gray, 65%);
-$color-surface-dark-2: darken($color-gray, 60%);
-$color-surface-dark-3: darken($color-gray, 55%);
+$color-surface-dark: darken($color-gray, 60%);
+$color-surface-dark-2: darken($color-gray, 45%);
+$color-surface-dark-3: darken($color-gray, 30%);
 
 $color-outline: $color-gray;
 $color-outline-dark: $color-gray;

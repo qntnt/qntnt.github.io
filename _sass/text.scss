@@ -1,6 +1,27 @@
-
+@import 'colors';
 
 .sub-text {
   font-size: small;
   text-justify: center;
+}
+
+.text-centered {
+  text-align: center;
+  text-justify: center;
+}
+
+.text-primary {
+  color: $color-primary;
+
+  &-dark {
+    color: $color-primary-dark;
+  }
+
+  &-light {
+    color: $color-primary-light;
+  }
+}
+
+.text-secondary {
+  color: $color-secondary;
 }

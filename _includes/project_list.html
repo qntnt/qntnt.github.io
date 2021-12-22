@@ -5,7 +5,7 @@
   {% capture stripped_content %}{{project.content | strip}}{% endcapture %}
   <a class='simple-card col'
     href="{% if stripped_content == '' and project.external_url %}{{project.external_url}}{% else %}{{project.url}}{% endif %}">
-    <h3 class='wrap-content'>{{project.name}}</h3>
+    <h3 class='wrap-content text-primary'>{{project.name}}</h3>
     <div class='sub-text wrap-content'>{{project.description}}</div>
     {% if project.categories.size > 0 %}
     <div class='row justify-content-end sub-text spaced-half'>

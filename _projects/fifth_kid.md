@@ -2,9 +2,13 @@
 layout: project
 name: Fifth Kid
 description: My solo musical project.
-external_url: https://open.spotify.com/artist/1fX0p1l2MYpby8ZyHlS5uF?si=ooKii86sT_KQB3g8Qm608w
+external_url: 'https://open.spotify.com/artist/1fX0p1l2MYpby8ZyHlS5uF?si=ooKii86sT_KQB3g8Qm608w'
 external_url_text: Spotify Page
-categories: music solo
+categories: music
+tags:
+  - music
+  - solo
+lastmod: '2021-12-22T05:17:34.057Z'
 ---
 
 <iframe src="https://open.spotify.com/embed/artist/1fX0p1l2MYpby8ZyHlS5uF?utm_source=generator&theme=0" width="100%"

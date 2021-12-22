@@ -32,3 +32,39 @@ ul {
 ul, ol {
   margin: 0;
 }
+
+a {
+  color: $color-interactive;
+
+  &:hover {
+    color: $color-interactive-active;
+  }
+
+  &:visited {
+    color: $color-interactive-inactive;
+  }
+}
+
+.site-title {
+  color: $color-primary;
+
+  &:visited {
+    @extend .site-title;
+  }
+
+  &:hover {
+    color: $color-primary-light;
+  }
+}
+
+.site-nav .page-link {
+  color: $color-primary;
+
+  &:visited {
+    color: $color-primary;
+  }
+
+  &:hover {
+    color: $color-primary-light;
+  }
+}

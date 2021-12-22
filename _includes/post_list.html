@@ -1,18 +1,24 @@
 {%- if site.posts.size > 0 -%}
 <h1>{{ page.list_title | default: "Posts" }}</h1>
 <div class="col spaced">
+
   {%- for post in site.posts -%}
   <a class="simple-card borderless" href="{{ post.url | relative_url }}">
     {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
     <span class="post-meta">{{ post.date | date: date_format }}</span>
-    <h2>
+    <h2 class="text-primary">
       {{ post.title | escape }}
     </h2>
-    {%- if site.show_excerpts -%}
-    <div class='fading-container'>
-      {{ post.excerpt }}
+    {% if post.preview %}
+    <div class="preview-container">
+      <img class="preview-img" src="{{ post.preview }}" />
     </div>
-    {%- endif -%}
+    {% endif %}
+    {% if site.show_excerpts and post.excerpt %}
+    <div class='fading-container'>
+      <div class="excerpt">{{ post.excerpt }}</div>
+    </div>
+    {% endif %}
   </a>
   {%- endfor -%}
 </div>
