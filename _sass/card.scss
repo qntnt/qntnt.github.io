@@ -11,7 +11,7 @@
   }
 }
 
-.simple-card:hover {
+a.simple-card:hover {
   background-color: $color-surface-2;
 }
 
@@ -20,7 +20,8 @@
   mask-image: linear-gradient(to bottom, black, transparent 100%);
 }
 
-.simple-card a:any-link, a.simple-card:any-link {
+// .simple-card a:any-link, a.simple-card:any-link {
+a.simple-card:any-link {
   color: $color-text;
   text-decoration: none;
 }

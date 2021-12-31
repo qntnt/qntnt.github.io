@@ -12,7 +12,8 @@ $color-primary-light: $color-royal-light;
 $color-secondary: $color-fern;
 
 $color-interactive: $color-vibrant-fern;
-$color-interactive-active: darken($color-vibrant-fern, 10%);
+$color-interactive-focused: lighten($color-interactive, 5%);
+$color-interactive-active: darken($color-interactive, 5%);
 $color-interactive-inactive: $color-fern;
 
 $color-surface: lighten($color-gray, 20%);
@@ -21,6 +22,13 @@ $color-surface-3: lighten($color-gray, 10%);
 $color-surface-dark: darken($color-gray, 60%);
 $color-surface-dark-2: darken($color-gray, 45%);
 $color-surface-dark-3: darken($color-gray, 30%);
+
+$color-surface-transparent: transparentize($color-surface, 0.5);
+$color-surface-2-transparent: transparentize($color-surface-2, 0.5);
+$color-surface-3-transparent: transparentize($color-surface-3, 0.5);
+$color-surface-dark-transparent: transparentize($color-surface-dark, 0.5);
+$color-surface-dark-2-transparent: transparentize($color-surface-dark-2, 0.5);
+$color-surface-dark-3-transparent: transparentize($color-surface-dark-3, 0.5);
 
 $color-outline: $color-gray;
 $color-outline-dark: $color-gray;

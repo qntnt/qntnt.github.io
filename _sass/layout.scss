@@ -24,6 +24,7 @@
 .row {
   @extend .flex;
   flex-direction: row;
+  align-items: flex-start;
 
   &-reverse {
     @extend .row;

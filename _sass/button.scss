@@ -1,0 +1,39 @@
+@import 'colors';
+@import 'dimens';
+
+.button {
+    padding: $spacing;
+    border-radius: $spacing;
+    border-width: 1px;
+    border-style: solid;
+    cursor: pointer;
+
+    &-primary {
+        @extend .button;
+        background-color: $color-interactive;
+        border-color: $color-interactive;
+        color: $color-text-dark;
+
+        &:hover {
+            background-color: $color-interactive-focused;
+        }
+
+        &:active {
+            background-color: $color-interactive-active;
+        }
+    }
+
+    &-secondary {
+        @extend .button;
+        border-color: $color-surface-3;
+        color: $color-text;
+
+        &:hover {
+            background-color: $color-surface-transparent;
+        }
+
+        &:active {
+            background-color: $color-surface-2-transparent;
+        }
+    }
+}

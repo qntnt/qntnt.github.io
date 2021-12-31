@@ -1,0 +1,21 @@
+@import 'colors';
+@import 'dimens';
+@import 'button';
+@import 'card';
+
+#cookie-notice {
+    @extend .simple-card;
+    position: fixed;
+    bottom: $spacing-double;
+    left: $spacing-double;
+    padding: $spacing-double;
+   //background-color: $color-surface-3;
+}
+
+#cookie-notice-accept {
+    @extend .button-primary;
+}
+
+#cookie-notice-deny {
+    @extend .button-secondary;
+}
