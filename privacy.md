@@ -2,6 +2,7 @@
 layout: page
 title: Privacy Policy
 lastmod: '2021-12-31T19:07:40.791Z'
+menu: main
 ---
 
 ### How your data are processed
