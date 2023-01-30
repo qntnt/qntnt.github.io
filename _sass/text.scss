@@ -11,17 +11,17 @@
 }
 
 .text-primary {
-  color: $color-primary;
+  color: var(--color-primary);
 
   &-dark {
-    color: $color-primary-dark;
+    color: var(--color-primary-darker);
   }
 
   &-light {
-    color: $color-primary-light;
+    color: var(--color-primary-lighter);
   }
 }
 
 .text-secondary {
-  color: $color-secondary;
+  color: var(--color-secondary);
 }

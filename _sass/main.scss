@@ -8,10 +8,50 @@
 }
 
 body {
-  color: $color-text;
-  background-color: $color-surface;
+  --color-primary: #{$color-primary};
+  --color-primary-darker: #{$color-primary-darker};
+  --color-primary-lighter: #{$color-primary-lighter};
+
+  --color-secondary: #{$color-fern};
+
+  --color-text: #{$color-text};
+  --color-text-dark: #{$color-text-dark};
+  --color-surface: #{$color-surface};
+  --color-surface-2: #{$color-surface-2};
+  --color-surface-3: #{$color-surface-3};
+  --color-surface-transparent: #{$color-surface-transparent};
+  --color-surface-2-transparent: #{$color-surface-2-transparent};
+  --color-surface-3-transparent: #{$color-surface-3-transparent};
+  --color-interactive: #{$color-interactive};
+  --color-interactive-focused: #{$color-interactive-focused};
+  --color-interactive-active: #{$color-interactive-active};
+  --color-interactive-inactive: #{$color-interactive-inactive};
+  --color-outline: #{$color-outline};
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --color-primary: #{$color-primary-dark};
+    --color-primary-darker: #{$color-primary-dark-darker};
+    --color-primary-lighter: #{$color-primary-dark-lighter};
+    --color-text: #{$color-text-dark};
+    --color-text-dark: #{$color-text};
+    --color-surface: #{$color-surface-dark};
+    --color-surface-2: #{$color-surface-dark-2};
+    --color-surface-3: #{$color-surface-dark-3};
+    --color-surface-transparent: #{$color-surface-dark-transparent};
+    --color-surface-2-transparent: #{$color-surface-dark-2-transparent};
+    --color-surface-3-transparent: #{$color-surface-dark-3-transparent};
+    --color-outline: #{$color-outline-dark};
+  }
+}
+
+body {
+  color: var(--color-text);
+  background-color: var(--color-surface);
   font-family: BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
 }
+
 
 .wrap-content-width {
   width: fit-content;
@@ -30,42 +70,43 @@ ul {
   list-style-type: none;
 }
 
-ul, ol {
+ul,
+ol {
   margin: 0;
 }
 
 a {
-  color: $color-interactive;
+  color: var(--color-interactive);
 
   &:hover {
-    color: $color-interactive-active;
+    color: var(--color-interactive-active);
   }
 
   &:visited {
-    color: $color-interactive-inactive;
+    color: var(--color-interactive-inactive);
   }
 }
 
 .site-title {
-  color: $color-primary;
+  color: var(--color-primary);
 
   &:visited {
-    @extend .site-title;
+    color: var(--color-primary);
   }
 
   &:hover {
-    color: $color-primary-light;
+    color: var(--color-primary-lighter);
   }
 }
 
 .site-nav .page-link {
-  color: $color-primary;
+  color: var(--color-primary);
 
   &:visited {
-    color: $color-primary;
+    color: var(--color-primary);
   }
 
   &:hover {
-    color: $color-primary-light;
+    color: var(--color-primary-lighter);
   }
 }

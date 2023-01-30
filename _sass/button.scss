@@ -10,30 +10,30 @@
 
     &-primary {
         @extend .button;
-        background-color: $color-interactive;
-        border-color: $color-interactive;
-        color: $color-text-dark;
+        background-color: var(--color-interactive);
+        border-color: var(--color-interactive);
+        color: var(--color-text-dark);
 
         &:hover {
-            background-color: $color-interactive-focused;
+            background-color: var(--color-interactive-focused);
         }
 
         &:active {
-            background-color: $color-interactive-active;
+            background-color: var(--color-interactive-active);
         }
     }
 
     &-secondary {
         @extend .button;
-        border-color: $color-surface-3;
-        color: $color-text;
+        border-color: var(--color-surface-3);
+        color: var(--color-text);
 
         &:hover {
-            background-color: $color-surface-transparent;
+            background-color: var(--color-surface-transparent);
         }
 
         &:active {
-            background-color: $color-surface-2-transparent;
+            background-color: var(--color-surface-2-transparent);
         }
     }
 }

@@ -5,6 +5,6 @@
   font-size: smaller;
   border-radius: $spacing;
   padding: $spacing-half;
-  background-color: $color-primary-light;
-  color: $color-text-dark;
+  background-color: var(--color-primary-lighter);
+  color: var(--color-text-dark);
 }

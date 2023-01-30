@@ -1,9 +1,9 @@
 @import 'prelude';
 
 .simple-card {
-  border: 1px solid $color-outline;
+  border: 1px solid var(--color-outline);
   padding: $spacing-double;
-  background-color: $color-surface;
+  background-color: var(--color-surface);
   flex-grow: 1;
 
   &.borderless {
@@ -12,7 +12,7 @@
 }
 
 a.simple-card:hover {
-  background-color: $color-surface-2;
+  background-color: var(--color-surface-2);
 }
 
 .fading-container {
@@ -22,7 +22,7 @@ a.simple-card:hover {
 
 // .simple-card a:any-link, a.simple-card:any-link {
 a.simple-card:any-link {
-  color: $color-text;
+  color: var(--color-text);
   text-decoration: none;
 }
 
